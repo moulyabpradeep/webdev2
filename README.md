@@ -5,7 +5,7 @@ This project is the content for the Web Development 2 course at SAIT. It is crea
 New instructors to this course must customize this content for your own sections and create your own deployment. You can do this by forking this repository and making changes to the content.
 
 **As always: this is your course, make it your own!** Change it to suit your teaching style and your students' needs. Feel free to add, remove, or change anything you want. You can even decide to use a different technology stack if you want and not use any of the content provided here. It's up to you!
-
+ 
 ## Development Environment Setup
 
 1. Fork this repository to your own GitHub account.

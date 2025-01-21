@@ -52,19 +52,6 @@ person.isStudent = false; // change value
 
 ---
 
-## Object Destructuring
-
-- Destructuring is a way to extract properties from an object
-- Destructuring is useful when passing data to components
-
-```js
-let { name, age } = person;
-console.log(name); // Diane
-console.log(age); // 25
-```
-
----
-
 ## JSON
 
 - JavaScript Object Notation
@@ -86,37 +73,6 @@ console.log(age); // 25
     "city": "Calgary",
     "province": "AB"
   }
-}
-```
-
----
-
-## React Props
-
-- a way to pass data to components
-- accessed using `props` object containing all the properties passed to the component
-
----
-
-## Props Example
-
-```js
-function Page() {
-  return (
-    <main>
-      <Person name="Diane" age="25" />
-      <Person name="Zach" age="21" />
-    </main>
-  );
-}
-
-function Person(props) {
-  return (
-    <div>
-      <h1>{props.name}</h1>
-      <p>Age: {props.age} years old</p>
-    </div>
-  );
 }
 ```
 
@@ -164,6 +120,52 @@ function Person(props) {
     Horizontal padding of 8px and vertical margin of 20px
   </h2>
 </article>
+```
+
+---
+
+## Object Destructuring
+
+- Destructuring is a way to extract properties from an object
+- Destructuring is useful when passing data to components
+
+```js
+let { name, age } = person;
+console.log(name); // Diane
+console.log(age); // 25
+```
+
+
+
+---
+
+## React Props
+
+- a way to pass data to components
+- accessed using `props` object containing all the properties passed to the component
+
+---
+
+## Props Example
+
+```js
+function Page() {
+  return (
+    <main>
+      <Person name="Diane" age="25" />
+      <Person name="Zach" age="21" />
+    </main>
+  );
+}
+
+function Person(props) {
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <p>Age: {props.age} years old</p>
+    </div>
+  );
+}
 ```
 
 ---

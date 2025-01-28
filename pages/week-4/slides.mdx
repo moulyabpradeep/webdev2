@@ -46,8 +46,52 @@ console.log(greet("Alice")); // "Hello, Alice"
 
 - Function expressions can be assigned to variables
 - The function can be called using the variable name
-- Function expressions are not hoisted, i.e. they cannot be called before they are defined
+- Function expressions are hoisted
 
+---
+
+## Arrow functions
+
+- Arrow functions are a shorthand syntax for defining functions
+
+```js
+let greet = (name) => {
+  return "Hello, " + name;
+};
+
+console.log(greet("Alice")); // "Hello, Alice"
+```
+
+---
+
+## Arrow functions, cont'd
+
+- If the function body is a single expression, you can omit the curly braces
+- The expression is returned implicitly
+
+```js
+let greet = (name) => "Hello, " + name;
+let foo = () => "bar";
+
+console.log(greet("Alice")); // "Hello, Alice"
+console.log(foo()); // "bar"
+```
+
+---
+
+## Function definition vs Function call
+
+- When a function is defined, it is not executed
+- The function is executed when it is called
+
+```js
+// greet is a function definition
+let greet = (name) => "Hello, " + name;
+console.log(greet); // [Function: greet]
+
+// greet is called with the argument "Alice"
+console.log(greet("Alice")); // "Hello, Alice"
+```
 ---
 
 ## JavaScript: Arrays
@@ -165,52 +209,6 @@ console.log(result);
 result = triple(5); // 15
 console.log(result);
 ```
-
----
-
-## Arrow functions
-
-- Arrow functions are a shorthand syntax for defining functions
-
-```js
-let greet = (name) => {
-  return "Hello, " + name;
-};
-
-console.log(greet("Alice")); // "Hello, Alice"
-```
-
----
-
-## Arrow functions, cont'd
-
-- If the function body is a single expression, you can omit the curly braces
-- The expression is returned implicitly
-
-```js
-let greet = (name) => "Hello, " + name;
-let foo = () => "bar";
-
-console.log(greet("Alice")); // "Hello, Alice"
-console.log(foo()); // "bar"
-```
-
----
-
-## Function definition vs Function call
-
-- When a function is defined, it is not executed
-- The function is executed when it is called
-
-```js
-// greet is a function definition
-let greet = (name) => "Hello, " + name;
-console.log(greet); // [Function: greet]
-
-// greet is called with the argument "Alice"
-console.log(greet("Alice")); // "Hello, Alice"
-```
-
 ---
 
 ## React: Event handlers

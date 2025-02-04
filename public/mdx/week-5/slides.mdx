@@ -41,33 +41,6 @@ c() && a(); // c
 
 ---
 
-## JavaScript: Event Object Example
-
-```jsx
-const getValues = (event) => {
-  // Get the value of the input field
-  console.log(event.target.value);
-};
-
-// In JSX, pass the event object to the event handler
-<input type="text" onChange={(e) => getValues(e)} />;
-```
-
----
-
-## JavaScript: Event Object
-
-- Event object is passed to event handlers
-- Contains information about the event
-
-  - `type` - event type, e.g. `click`, `submit`
-  - `target` - element that triggered the event, e.g. button
-
-- `target` property is useful for form validation
-- e.g. `event.target.value` to get the value of an input field
-
----
-
 ## React: Conditional Rendering
 
 - You cannot put an `if` statement inside JSX
@@ -164,6 +137,33 @@ export default function Alert({ type }) {
 ```
 
 In this example, the form will be submitted to `/send` using the POST method.
+
+---
+
+## JavaScript: Event Object Example
+
+```jsx
+const getValues = (event) => {
+  // Get the value of the input field
+  console.log(event.target.value);
+};
+
+// In JSX, pass the event object to the event handler
+<input type="text" onChange={(e) => getValues(e)} />;
+```
+
+---
+
+## JavaScript: Event Object
+
+- Event object is passed to event handlers
+- Contains information about the event
+
+  - `type` - event type, e.g. `click`, `submit`
+  - `target` - element that triggered the event, e.g. button
+
+- `target` property is useful for form validation
+- e.g. `event.target.value` to get the value of an input field
 
 ---
 
